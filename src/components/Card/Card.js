@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Card.scss';
 import PropTypes from 'prop-types';
+import {settings, listData} from '../../data/dataStore';
+import ReactHtmlParser from 'react-html-parser';
 
 class Card extends React.Component {
   static propTypes = {
@@ -11,7 +13,7 @@ class Card extends React.Component {
       <section className={styles.component}>
         <h4>{this.props.title}</h4>
       </section>
-    );
+    )
   }
 }
 
