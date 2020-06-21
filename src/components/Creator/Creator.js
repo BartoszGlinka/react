@@ -12,7 +12,7 @@ class Creator extends React.Component {
   static defaultProps = {
     text: 'Add new item',
   }
-
+  
   state = {
     value: '',
     visibleButtons: false,
@@ -45,6 +45,7 @@ class Creator extends React.Component {
   }
 
   render() {
+
     return (
       <div className={styles.component}>
         <input

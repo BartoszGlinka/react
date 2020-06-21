@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './App.scss';
 import List from '../List/ListContainer.js';
-import {settings} from '../../data/dataStore';
-import Creator from '../Creator/Creator';
 import PropTypes from 'prop-types';
 
 class App extends React.Component {
@@ -20,9 +18,6 @@ class App extends React.Component {
         {lists.map(listData => (
           <List key={listData.id} {...listData} />
         ))}
-        <div className={styles.creator}>
-          <Creator text={settings.listCreatorText} action={title => this.addList(title)} />
-        </div>
       </main>
     );
   }
