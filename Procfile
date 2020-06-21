@@ -1,1 +1,1 @@
-web: ./styles/index.js
+web: npm run server
