@@ -1,0 +1,1 @@
+web: ./styles/index.html
