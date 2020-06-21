@@ -4,6 +4,7 @@ import columnsReducer from './columnsRedux';
 import cardsReducer from './cardsRedux';
 import searchStringReducer from './searchStringRedux';
 
+
 // define initial state and shallow-merge initial data
 const initialState = {
   app: initialStoreData.app,
