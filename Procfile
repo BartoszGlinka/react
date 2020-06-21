@@ -1,1 +1,1 @@
-web: ./styles/index.html
+web: ./styles/index.js
