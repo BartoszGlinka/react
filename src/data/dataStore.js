@@ -6,6 +6,10 @@ export const settings = {
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
   },
+  
+  header: {
+    icon: 'dog',
+  },
   search: {
     defaultText: 'Search...',
     icon: 'search',
@@ -17,6 +21,18 @@ export const settings = {
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
+};
+
+export const infoContents = {
+  title: 'Info',
+  description: 'Lorem lorem info',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+};
+
+export const faqContents = {
+  title: 'Faq',
+  description: 'Lorem lorem faq',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
 export const listData = {
@@ -146,6 +162,7 @@ const initialStoreData = {
   lists: [...lists],
   columns: [...columns],
   cards: [...cards],
+  
 };
 
 export default initialStoreData;
