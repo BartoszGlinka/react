@@ -2,6 +2,10 @@ import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
 import Creator from '../Creator/Creator';
+import Card from '../Card/Card.js';
+import Icon from '../Icon/Icon.js';
+import Container from '../Container/Container.js';
+import {settings} from '../../data/dataStore';
 
 class SearchResult extends React.Component {
   static propTypes = {

@@ -1,10 +1,9 @@
 import {connect} from 'react-redux';
 import SearchResult from './SearchResult';
-import {getCardsForColumn, getFilteredCardsForList} from '../../redux/cardsRedux.js';
+import {getFilteredCards, getFilteredCardsForList} from '../../redux/cardsRedux.js';
 
 const mapStateToProps = (state, props) => ({
-  cards: getFilteredCards(state, props.match.params.id)
-  {console.log(state)}
+  cards: getFilteredCards(state, props.match.params.id),
 });
 
 const mapDispatchToProps = (dispatch, props) => ({
