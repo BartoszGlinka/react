@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './Column.scss';
+import styles from './SearchResult.scss';
 import PropTypes from 'prop-types';
-import Creator from '../Creator/Creator';
 import Card from '../Card/Card.js';
 import Icon from '../Icon/Icon.js';
 import Container from '../Container/Container.js';
@@ -9,10 +8,8 @@ import {settings} from '../../data/dataStore';
 
 class SearchResult extends React.Component {
   static propTypes = {
-    title: PropTypes.string.isRequired,
     cards: PropTypes.array,
     icon: PropTypes.string,
-    addCard: PropTypes.func,
   }
 
   static defaultProps = {
@@ -20,11 +17,11 @@ class SearchResult extends React.Component {
   }
 
   render() {
-    const {title, icon, cards, addCard} = this.props;
+    const {icon, cards} = this.props;
     return (
       <Container>
         <section className={styles.component}>
-          <h3 className={styles.title}>{title} 
+          <h3 className={styles.title}>Search Result
             <span className={styles.icon}>
               <Icon name={icon} />
             </span>
@@ -33,9 +30,6 @@ class SearchResult extends React.Component {
             {cards.map(cardData => (
               <Card key={cardData.id} {...cardData} />
             ))}
-          </div>
-          <div className={styles.creator}>
-            <Creator text={settings.cardCreatorText} action={addCard}/>
           </div>
         </section>
       </Container>
